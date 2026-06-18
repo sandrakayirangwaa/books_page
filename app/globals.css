@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: #142c23;
+  color: #8f94a6;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}

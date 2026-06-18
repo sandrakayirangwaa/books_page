@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.infoCard {
+  background-color: #1c241f; 
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.25s ease, 
+              border-color 0.25s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  border-color: #36703f; 
+  box-shadow: 0 0 25px rgba(47, 148, 89, 0.15); 
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.cardDesc {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
